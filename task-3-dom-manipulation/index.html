@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic DOM Manipulation</title>
+    <style>
+        body{
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: white;
+            padding: 20px;
+              border-radius: 5px;
+              box-shadow: black;
+              width: 500px;
+        }
+
+        .container >*{
+            margin: 0;
+        }
+        #title{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn{
+            margin-top: 5px;
+            background-color: green;
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 4px 40px;
+            text-align: center;
+           
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #reset{
+             background-color: red;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 6px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h2 id="title">Simple Counter App</h2>
+            <button class="btn" id="increment">+</button>
+            <h2 id="CurrentCounter"></h2>
+            <button class="btn" id="decrement">-</button>
+            <button id="reset">Reset</button>
+        </div>
+    </section>
+
+   <script src="./JavaScript.js"></script>
+</body>
+</html>
