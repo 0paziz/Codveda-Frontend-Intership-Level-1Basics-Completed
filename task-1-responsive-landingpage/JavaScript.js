@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 });
 
-// Fade-in animation for features
+// Fade-in animation for feature
 window.addEventListener('DOMContentLoaded', () => {
     const features = document.querySelectorAll('.feature');
     features.forEach((feature, i) => {
